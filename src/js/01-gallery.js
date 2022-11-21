@@ -1,3 +1,5 @@
+console.log('faina_super_dog');
+
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 // Описаний в документації
