@@ -17,7 +17,9 @@ onPageLoad();
 
 function onFormSubmit(evt) {
   evt.preventDefault();
-
+  if (refs.email.value === '' || refs.message.value === '') {
+    return alert('Заповніть всі поля форми!');
+  }
   evt.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
   console.log('відправка форми:');
